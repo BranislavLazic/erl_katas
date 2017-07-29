@@ -1,5 +1,5 @@
 %% Find two oldest ages in list of ages.
-%% Eg. given the list [22, 33, 44, 23] should result in [33, 44].
+%% E.g. given the list [22, 33, 44, 23] should result in [33, 44].
 
 -module(two_oldest_ages).
 
