@@ -5,7 +5,7 @@
 -export([delimited_elements_as_string/1]).
 
 delimited_elements_as_string([]) -> "";
-delimited_elements_as_string(List) when is_list(List) ->
+
+delimited_elements_as_string(List) ->
   ValueBeforeTrimming = lists:foldl(fun(Value, Acc) -> Acc ++ Value ++ "," end, "", List),
-  lists:sublist(ValueBeforeTrimming, 1, length(ValueBeforeTrimming) - 1);
-delimited_elements_as_string(_)-> error.
+  lists:sublist(ValueBeforeTrimming, 1, length(ValueBeforeTrimming) - 1).
